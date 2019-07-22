@@ -10,12 +10,15 @@ gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 gem 'therubyracer'
+gem 'pry-rails'
+gem 'bcrypt',       '3.1.12'
 
 
 group :development, :test do
   # Use mysql as the database for Active Record
   gem 'mysql2', '>= 0.3.18', '< 0.6.0'
   gem 'byebug',  '9.0.6', platform: :mri
+  
 end
 
 group :development do
