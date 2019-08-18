@@ -1,9 +1,8 @@
 class UsersController < ApplicationController
-  
   def show
     @user = User.find(params[:id])
   end
-  
+
   def new
     @user = User.new
   end
@@ -18,7 +17,7 @@ class UsersController < ApplicationController
       redirect_to @user
       # GET "/users/#{@user.id}" => show
     else
-      #Failure
+      # Failure
       render 'new'
     end
   end
